@@ -11,7 +11,7 @@ Passo a Passo
 
 1️⃣ Clone o repositório (ou baixe os arquivos):
 
-git clone https://github.com/seu-usuario/biblioteca-online.git
+git clone https://github.com/Jefferson-1203/Biblioteca-Online.git
 cd biblioteca-online
 
 2️⃣ Acesse a pasta do backend
@@ -31,8 +31,3 @@ Vá para a pasta front e abra o arquivo index.html
 Acesse http://localhost:3000/api/livros no navegador para ver os livros cadastrados.
 
 Use o frontend para adicionar, editar ou remover livros – todas as alterações são salvas no SQLite!
-
-📂 Estrutura do Projeto
-biblioteca-online/
-├── back/              # Backend (Node.js + Express + SQLite)
-├── front/             # Frontend (HTML/CSS/JS puro)
