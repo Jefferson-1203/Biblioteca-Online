@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Universo Literário</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Universo Literário</h1>
+      <nav class="nav">
+        <a href="#" class="nav-link active" id="nav-livros">Livros</a>
+        <a href="#" class="nav-link" id="nav-adicionar">Adicionar Livro</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main container">
+    <section id="livros-section">
+      <h2 class="section-title">Nossa Coleção</h2>
+      <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Buscar livros...">
+        <button id="search-button"><i class="fas fa-search"></i></button>
+      </div>
+      <div class="livros-grid" id="livros-container">
+        <!-- Livros serão carregados aqui via JavaScript -->
+      </div>
+    </section>
+
+    <section id="adicionar-section" class="hidden">
+      <h2 class="section-title">Adicionar Novo Livro</h2>
+      <form id="livro-form" class="livro-form">
+        <input type="hidden" id="livro-id">
+        <div class="form-group">
+          <label for="titulo">Título</label>
+          <input type="text" id="titulo" required>
+        </div>
+        <div class="form-group">
+          <label for="autor">Autor</label>
+          <input type="text" id="autor" required>
+        </div>
+        <div class="form-group">
+          <label for="ano">Ano de Publicação</label>
+          <input type="number" id="ano">
+        </div>
+        <div class="form-group">
+          <label for="genero">Gênero</label>
+          <input type="text" id="genero">
+        </div>
+        <div class="form-group">
+          <label for="descricao">Descrição</label>
+          <textarea id="descricao" rows="4"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="imagem">URL da Imagem</label>
+          <input type="text" id="imagem" placeholder="Deixe em branco para imagem padrão">
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Salvar</button>
+          <button type="button" class="btn btn-secondary" id="cancelar">Cancelar</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Universo Literário. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
